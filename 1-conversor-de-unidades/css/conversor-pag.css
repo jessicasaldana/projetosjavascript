@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    width: 400px;
+}
+
+#message {
+    font-size: 0.8rem;
+    color: #fe7f2dff;
+    margin-top: 0.7rem;
+    text-align: center;
+}
