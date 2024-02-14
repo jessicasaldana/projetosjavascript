@@ -1,0 +1,229 @@
+/* banner*/
+#banner {
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+#banner-info {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffff;
+    padding: 50px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-info > img {
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #233d4dff;
+}
+
+#banner-info > p {
+    font-size: 17px;
+    background-color: #264653ff;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 18px;
+}
+
+#banner-info > h1 {
+    color: #ffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    #banner {
+        height: 65vh;
+    }
+    
+    #banner-info {
+        width: 60%;
+        height: 65vh;
+        padding: 20px;
+    }
+
+    #banner-info > p {
+        margin: 0;
+    }
+}
+/* fim banner*/
+/*sobre*/
+#sobre {
+    text-align: center;
+    background-color: #2a9d8fff;
+    padding: 50px 25px;
+}
+
+#sobre > h2 {
+    color: #262626ff;
+    margin-bottom: 20px;
+}
+
+#sobre > p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #sobre {
+        padding: 2rem;
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+/* fim sobre*/
+/* linguagens */
+#linguagens {
+    width: 70%;
+    height: 270px;
+    display: flex;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #a1c181ff;
+}
+
+#linguagens > .container {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#linguagens > h2 {
+    color: #262626ff;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.linguagens-container {
+    flex: 2 2 auto;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.linguagens-container > img {
+    height: 160px;
+    padding: 15px;
+}
+
+.linguagens-container > .subtitle {
+    font-weight: bold;
+    color: #2a9d8fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.linguagens-container > p {
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+    #linguagens {
+        height: 650px;
+        display: flex;
+    }
+
+    #linguagens > .container {
+        display: block;
+        flex-direction: column;
+    }
+
+    .linguagens-container > h3, .linguagens-container > .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .linguagens-container {
+        padding: 0;
+    }
+
+    .central {
+        border-top: 1px solid #dddf;
+        border-bottom: 1px solid #dddf;
+    }
+}
+/* fim linguagens*/
+/* projetos */
+#projetos {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#projetos > h2 {
+    color: #264653ff;
+    margin-bottom: 30px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.projetos-box {
+    height: auto;
+    display: flex;
+    flex: 1 1 200px;
+    cursor: pointer;
+    padding: 6px 3px;
+    margin-left: 25px;
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a9d8fff;
+    border-right: 2px solid #264653ff;
+    border-bottom: 2px solid #264653ff;
+}
+
+.projetos-box:hover {
+    color: #233d4dff;
+    background-color: #fcca46ff;
+}
+
+.projetos-box > a {
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 430px) {
+    #projetos {
+        display: flex;
+        flex-direction: column;
+    }
+    #projetos > h2 {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projetos-container {
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    .projetos-box {
+        width: 180px;
+        flex: 1 1 180px;
+        margin-right: 5px;
+        margin-bottom: 2rem;
+    }
+}
