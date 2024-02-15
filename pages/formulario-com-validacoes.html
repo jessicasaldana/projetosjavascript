@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/css-pages/formulario-pag.css">
+    <script src="../js/scripts.js" defer></script>
     <script src="../js/js-pages/formulario-pag.js" defer></script>
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,31 +18,71 @@
     <title>Formulário com Validações</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Formulário com Validações</h1>
-        <form action="">
-            <div class="form-control">
-                <label for="name">Nome</label>
-                <input type="text" id="nome" name="nome" />
-                <div class="error-message"></div>
+    <!-- navbar -->
+    <header>
+        <nav id="navbar">
+            <a href="https://jessicasaldana.github.io/projetosjavascript/"><img class="logo" src="https://sdk.bitmoji.com/render/panel/a41da708-81e9-4ec3-9364-9d8748f7063d-20e0cb05-a9af-476a-aa60-d7c6ee78497c-v1.png?transparent=1&palette=1"/></a>
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/">Home</a></li>
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/#sobre">Sobre</a></li>
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/#projetos">Projetos</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+                <div class="menu-toggle"></div>
             </div>
-            <div class="form-control">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" />
-                <div class="error-message"></div>
+        </nav>
+    </header>
+    <!-- fim navbar-->
+    <main>
+        <section id="form">
+            <div class="form-container">
+                <h1>Formulário com Validações</h1>
+                <form action="">
+                    <div class="form-control">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="nome" name="nome" />
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" />
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" />
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-control">
+                        <label for="mensagem">Mensagem:</label>
+                        <input type="text" id="mensagem" name="mensagem" />
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="form-control">
-                <label for="assunto">Assunto</label>
-                <input type="text" id="assunto" name="assunto" />
-                <div class="error-message"></div>
+        </section>
+    </main>
+    <!-- rodape -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h3 class="lato-bold">Jessica Saldaña</h3>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular">LinkedIn: <a href="https://www.linkedin.com/in/jessicamarinasaldana/" target="_blank">@jessicamarinasaldana</a></p>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular">GitHub: <a href="https://github.com/jessicasaldana" target="_blank">@jessicasaldana</a></p>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular"><span class="lato-bold"> Jessica Saldaña &copy; 2024.</span> Todos os direitos reservados.</p>
+                </div>
             </div>
-            <div class="form-control">
-                <label for="mensagem">Mensagem</label>
-                <input type="text" id="mensagem" name="mensagem" />
-                <div class="error-message"></div>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+        </div>
+    </footer>
+    <!-- fim rodape -->
 </body>
 </html>
