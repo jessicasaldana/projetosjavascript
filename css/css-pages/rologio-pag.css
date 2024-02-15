@@ -1,28 +1,43 @@
 body{
-    background-color: #333f;
+    height: 100vh; /* Define a altura do corpo como a altura da viewport */
+    display: flex;
+    flex-direction: column; /* Define o layout em coluna */
+    background-color: var(--cinza-escuro);
 }
 
-.container {
-    height: 100vh;
-    width: 100%;
-    padding-top: 5rem;
+.clock-container {
     display: flex;
+    height: 57.9vh;
+    align-items: center;
     justify-content: center;
 }
 
-.clock {
-    font-size: 3rem;
-    font-weight: bolder;
-    color: #ffff;
-    text-align: center;
-    border: 2px solid #ffff;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    height: 80px;
+.clock-area {
     display: flex;
+    font-size: 40pt;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
     align-items: center;
+    color: var(--branco);
+    border: 2px solid var(--branco);
 }
 
-.clock > span {
-    margin-right: 0.5rem;
+.clock-area > span {
+    margin: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .clock-area {
+        padding: 2rem 2rem;
+        flex-direction: column;
+    }
+
+    .clock-area > span {
+        margin: 0.25rem 0;
+    }
+
+    .divider {
+        display: none;
+    }
 }

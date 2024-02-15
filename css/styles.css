@@ -257,7 +257,7 @@ a > .logo {
 }
 /* fim navbar */
 /* rodape --------------------------------------------------*/
-#footer {
+footer {
     display: flex;
     height: 200px;
     padding: 20px 0;
@@ -267,7 +267,7 @@ a > .logo {
     background-color: var(--yinmn-blue);
 }
 
-#footer > .container {
+footer > .container {
     padding: 10px;
 }
 
