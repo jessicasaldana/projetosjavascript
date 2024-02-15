@@ -1,35 +1,36 @@
 body {
-    background-color: #a1c181ff;
-    padding-top: 2rem;
+    background-color: var(--buff);
 }
 
 .quote {
-    font-size: 1.6rem;
-    text-align: center;
-    max-width: 600px;
+    display: flex;
+    height: 57.9vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-area {
     margin: 0 auto;
     padding: 1.5rem;
-    border: 2px solid #ffff;
-    color: #ffff;
-    border-radius: 0.4rem;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--cinza-escuro);
+    border: 2px solid var(--light-coral);
 }
 
-.quote > .text {
-    font-style: italic;
-    margin-bottom: 0.4rem;
+.quote-area > .text {
+    margin-bottom: 1rem;
 }
 
-.quote > .author {
-    font-weight: bold;
-    color: #233d4dff;
+.quote-area > .author {
+    margin-bottom: 1rem;
+    color: var(--chinese-violet);
 }
 
-.button { 
-    font-size: 1.4rem;
-    opacity: 1;
-}
-
-.button:hover {
-    background-color: #fcca46ff;
-    color: #233d4dff;
+@media (max-width: 650px) {
+    .quote-area {
+        margin: 0 40px;
+        max-width: 500px;
+    }
 }
