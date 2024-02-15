@@ -1,7 +1,4 @@
 body{
-    height: 100vh; /* Define a altura do corpo como a altura da viewport */
-    display: flex;
-    flex-direction: column; /* Define o layout em coluna */
     background-color: var(--cinza-escuro);
 }
 
