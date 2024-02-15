@@ -22,6 +22,10 @@
     --sombra-elementos: 4px 4px 5px rgba(0, 0, 0, 0.6);
 }
 
+body {
+    background-color: var(--cinza-claro);
+}
+
 h1{
     line-height: 3rem;
     font-size: var(--tamanho-font-titulo-1);
