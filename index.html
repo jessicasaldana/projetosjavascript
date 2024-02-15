@@ -12,18 +12,18 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Titulo da página -->
     <title>Projetos JavaScript</title>
 </head>
 <body>
     <!-- navbar -->
     <header>
-        <nav class="navbar">
-            <a href="index.html"><img class="logo" src="https://sdk.bitmoji.com/render/panel/a41da708-81e9-4ec3-9364-9d8748f7063d-20e0cb05-a9af-476a-aa60-d7c6ee78497c-v1.png?transparent=1&palette=1"/></a>
+        <nav id="navbar">
+            <a href="https://jessicasaldana.github.io/projetosjavascript/"><img class="logo" src="https://sdk.bitmoji.com/render/panel/a41da708-81e9-4ec3-9364-9d8748f7063d-20e0cb05-a9af-476a-aa60-d7c6ee78497c-v1.png?transparent=1&palette=1"/></a>
             <div class="container">
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#footer">Contato</a></li>
@@ -38,25 +38,24 @@
         <div id="banner">
             <div id="banner-info">
                 <img src="https://avatars.githubusercontent.com/u/79287460?v=4" alt="Foto de perfil de Jessica Saldaña">
-                <h1 class="titulo">Projetos JavaScript</h1>
-                <p>Jessica Saldaña</p>
+                <h1 class="titulo lato-bold">Projetos JavaScript</h1>
             </div>
         </div>
         <!-- fim banner -->
         <!-- secao sobre -->
         <section id="sobre">
-            <h2>Sobre meu portfólio JS</h2>
-            <p><span class="bold">Este é meu portfólio de projetos em JavaScript,</span> cuidadosamente criado para compartilhar minha jornada como desenvolvedor front-end. Apresento uma coleção variada de projetos que demonstram minhas habilidades e paixão pela programação. Meu objetivo é fornecer uma visão abrangente das minhas capacidades técnicas e criativas, enquanto compartilho meu entusiasmo pelo desenvolvimento web. Sinta-se à vontade para explorar os projetos, aprender algo novo e entrar em contato para colaborações ou oportunidades profissionais. Espero que este site inspire e motive você, assim como foi uma fonte de aprendizado e crescimento para mim. Agradeço por sua visita e espero que aproveite o que tenho a oferecer aqui!</p>
+            <h2 class="lato-bold">Sobre meu portfólio JS</h2>
+            <p class="lato-light"><span class="lato-bold">Bem vindo(a)! Meu nome é Jessica Saldaña e este é meu portfólio de projetos em JavaScript.</span> Ele foi cuidadosamente criado para compartilhar minha jornada como desenvolvedora front-end. Apresento uma coleção variada de projetos que demonstram minhas habilidades e paixão pela programação. Meu objetivo é fornecer uma visão abrangente das minhas capacidades técnicas e criativas, enquanto compartilho meu entusiasmo pelo desenvolvimento web. Sinta-se à vontade para explorar os projetos, aprender algo novo e entrar em contato para colaborações ou oportunidades profissionais. Espero que este site inspire e motive você, assim como foi uma fonte de aprendizado e crescimento para mim. Agradeço por sua visita e espero que aproveite o que tenho a oferecer aqui!</p>
         </section>
         <!-- fim secao sobre -->
         <!-- secao habilidades -->
         <section id="linguagens">
-            <h2>Linguagens utilizadas</h2>
+            <h2 class="lato-black">Linguagens utilizadas</h2>
             <div class="container">
                 <div class="linguagens-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
                 </div>
-                <div class="linguagens-container central">
+                <div class="linguagens-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
                 </div>
                 <div class="linguagens-container">
@@ -67,14 +66,42 @@
         <!-- fim secao habilidades -->
         <!-- protifolio -->
         <section id="projetos">
-            <h2>Meus projetos JavaScript</h2>
-            <ul class="projetos-container">
-                <li class="projetos-box"><a href="pages/conversor-de-unidades.html">Conversor de unidades</a></li>
-                <li class="projetos-box"><a href="pages/relogio-digital.html">Relógio Digital</a></li>
-                <li class="projetos-box"><a href="pages/citacoes.html">Citações</a></li>
-                <li class="projetos-box"><a href="pages/galeria-com-lightbox.html">Galeria com Lightbox</a></li>
-                <li class="projetos-box"><a href="pages/barra-de-progresso.html">Barra de Progresso</a></li>
-            </ul>
+            <h2 class="lato-bold">Meus projetos JavaScript</h2>
+            <div class="projetos-container">
+                <ul class="projetos-listas lista-1">
+                    <a class="lato-bold" href="pages/conversor-de-unidades.html"><li class="item-lista primeiro">Conversor de unidades</li></a>
+                    <a class="lato-bold" href="pages/relogio-digital.html"><li class="item-lista">Relógio Digital</li></a>
+                    <a class="lato-bold" href="pages/citacoes.html"><li class="item-lista">Citações</li></a>
+                    <a class="lato-bold" href="pages/galeria-com-lightbox.html"><li class="item-lista">Galeria com Lightbox</li></a>
+                    <a class="lato-bold" href="pages/barra-de-progresso.html"><li class="item-lista">Barra de Progresso</li></a>
+                    <a class="lato-bold" href="pages/formulario-com-validacoes.html"><li class="item-lista ultimo">Formulário com Validação</li></a>
+                </ul>
+                <ul class="projetos-listas lista-2">
+                    <a class="lato-bold" href="#"><li class="item-lista primeiro">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista ultimo">Em breve</li></a>
+                </ul>
+                <ul class="projetos-listas lista-3">
+                    <a class="lato-bold" href="#"><li class="item-lista primeiro">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista ultimo">Em breve</li></a>
+                </ul>
+                <ul class="projetos-listas lista-4">
+                    <a class="lato-bold" href="#"><li class="item-lista primeiro">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista">Em Breve</li></a>
+                    <a class="lato-bold" href="#"><li class="item-lista ultimo">Em breve</li></a>
+                </ul>
+            </div>
+            <button id="botao" class="lato-bold">Mais projetos<br/>(em breve)</button>
         </section>
         <!-- fim protifolio -->
     </main>
@@ -83,16 +110,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-item">
-                    <h3>Jessica Saldaña</h3>
+                    <h3 class="lato-bold">Jessica Saldaña</h3>
                 </div>
                 <div class="footer-item">
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/jessicamarinasaldana/" target="_blank">@jessicamarinasaldana</a></p>
+                    <p class="lato-regular">LinkedIn: <a href="https://www.linkedin.com/in/jessicamarinasaldana/" target="_blank">@jessicamarinasaldana</a></p>
                 </div>
                 <div class="footer-item">
-                    <p>GitHub: <a href="https://github.com/jessicasaldana" target="_blank">@jessicasaldana</a></p>
+                    <p class="lato-regular">GitHub: <a href="https://github.com/jessicasaldana" target="_blank">@jessicasaldana</a></p>
                 </div>
                 <div class="footer-item">
-                    <p><span class="bold"> Jessica Saldaña &copy; 2024.</span> Todos os direitos reservados.</p>
+                    <p class="lato-regular"><span class="lato-bold"> Jessica Saldaña &copy; 2024.</span> Todos os direitos reservados.</p>
                 </div>
             </div>
         </div>

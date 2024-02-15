@@ -1,6 +1,8 @@
 :root {
     /* tamanho fontes */
     --tamanho-font-padrao: 14pt;
+    --tamanho-font-respon: 16pt;
+    --tamanho-font-titulo-pag: 40pt;
     --tamanho-font-titulo-1: 30pt;
     --tamanho-font-titulo-2: 25pt;
     --tamanho-font-titulo-3: 20pt;
@@ -14,30 +16,37 @@
     --branco: #ffff;
     --cinza-claro: #dddf;
     --cinza-escuro: #262626ff;
+    /* sombra texto e elementos */
+    --sombra-texto: 2px 2px 4px rgba(34, 34, 34, 1);
+    --sombra-elementos: 4px 4px 5px rgba(0, 0, 0, 0.6);
 }
 
 h1{
+    line-height: 4rem;
     font-size: var(--tamanho-font-titulo-1);
-    line-height: 3rem;
 }
 
 h2 {
+    line-height: 3rem;
     font-size: var(--tamanho-font-titulo-2);
-    line-height: 2rem;
 }
 
 h3 {
+    line-height: 2rem;
     font-size: var(--tamanho-font-titulo-3);
-    line-height: 1.5rem;
 }
 
-p {
-    font-size: var(--tamanho-font-padrao);
-    margin-top: 1rem;
+p, a, li, button {
     line-height: 1.5rem;
-    margin-bottom: 1.1rem;
+    font-size: var(--tamanho-font-padrao);
 }
-/* estilos de fonte ---------------------------*/
+
+@media (max-width: 750px) {
+    p, a, li, button{
+        font-size: var(--tamanho-font-respon);
+    }
+}
+/* estilos de fonte ----------------------------------------*/
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -97,7 +106,8 @@ p {
     font-weight: 900;
     font-style: italic;
 }
-/* forms --------------------------------------*/
+/** fim estilos de fonte /
+/* forms ---------------------------------------------------*/
 form {
     display: flex;
     flex-direction: column;
@@ -131,25 +141,25 @@ select, input {
 }
 
 button {
-    border: none;
     cursor: pointer;
     transition: 0.5s;
     border-radius: 5px;
-    color: var(--preto);
+    color: var(--branco);
+    padding: 1rem 1.3rem;
     padding: 0.7rem 1.2rem;
-    background-color: var(--china-rose);
-    font-size: var(--tamanho-font-padrao);
+    background-color: var(--light-coral);
 }
 
 button:hover {
-    background-color: var(--light-coral);
+    background-color: var(--china-rose);
 }
 
 .output-group {
     margin-top: 1.2rem;
 }
-/* navbar -------------------------------------*/
-.navbar {
+/* fim forms */
+/* navbar --------------------------------------------------*/
+#navbar {
     height: 60px;
     color: var(--branco);
     background-color: var(--yinmn-blue);
@@ -162,7 +172,7 @@ a > .logo {
     margin-left: 0.5rem;
 }
 
-.navbar .container {
+#navbar .container {
     float: right;
     display: flex;
     align-items: center;
@@ -225,50 +235,56 @@ a > .logo {
         display: flex;
     }
   
-    .navbar .container {
+    #navbar .container {
         height: 60px;
         margin-right: 1rem;
         
     }
     
     .nav-menu li {
-        margin: 10px 0;
+        padding: 10px 0;
         text-align: center;
+        margin: 0;
+    }
+
+    .nav-menu li:hover {
+        background-color: var(--light-coral);
     }
   
     .menu-toggle {
         display: block;
     }
 }
-/* rodape -------------------------------------*/
+/* fim navbar */
+/* rodape --------------------------------------------------*/
 #footer {
-    height: 180px;
+    display: flex;
+    height: 200px;
     padding: 20px 0;
     text-align: center;
-    color: var(--cinza-claro);
+    align-items: center;
+    justify-content: center;
     background-color: var(--yinmn-blue);
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+#footer > .container {
+    padding: 10px;
 }
 
-.footer-item > p{
-    margin: 5px;
-}
-
-.footer-item > p > .bold{
-    color: var(--branco);
-}
-
-.footer-item h3 {
+.footer-item > h3 {
     margin-bottom: 10px;
     color: var(--branco);
 }
 
-.footer-item a {
-    color: var(--buff);
+.footer-item > p{
+    margin: 5px;
+    color: var(--branco);
+}
+
+.footer-item > p > span, .footer-item > p > a{
+    color: var(--light-coral);
+}
+
+.footer-item > p > a:hover {
+    border-bottom: 2px solid var(--light-coral);
 }
