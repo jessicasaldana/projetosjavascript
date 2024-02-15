@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/css-pages/conversor-pag.css">
-    <script src="../js/js-pages/conversor-pag.js" defer></script>
-    <title>Conversor de unidades</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS e JS -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/css-pages/conversor-pag.css">
+        <script src="../js/scripts.js" defer></script>
+        <script src="../js/js-pages/conversor-pag.js" defer></script>
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Titulo da página -->
+        <title>COnversor de unidades</title>
+    </head>
 <body>
-    <div class="container">
-        <h1>Conversor de unidades</h1>
-        <div class="input-group">
-            <label for="input">Digite a quantidade:</label>
-            <input type="number" id="input" name="input" placeholder="0"/>
+<!-- navbar -->
+    <header>
+        <nav id="navbar">
+            <a href="https://jessicasaldana.github.io/projetosjavascript/"><img class="logo" src="https://sdk.bitmoji.com/render/panel/a41da708-81e9-4ec3-9364-9d8748f7063d-20e0cb05-a9af-476a-aa60-d7c6ee78497c-v1.png?transparent=1&palette=1"/></a>
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/">Home</a></li>
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/#sobre">Sobre</a></li>
+                    <li><a href="https://jessicasaldana.github.io/projetosjavascript/#projetos">Projetos</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+                <div class="menu-toggle"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- fim navbar-->
+    <main>
+        <section id="convert">
+            <div class="convert-container">
+                <h1>Conversor de unidades</h1>
+                <div class="input-group">
+                    <label for="input">Digite a quantidade:</label>
+                    <input type="number" id="input" name="input" placeholder="0"/>
+                </div>
+                <div class="input-group">
+                    <label for="from">De:</label>
+                    <select name="from" id="from">
+                        <option value="km">Quilômetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="mm">Milímetro(s)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="to">Para:</label>
+                    <select name="to" id="to">
+                        <option value="km">Quilômetro(s)</option>
+                        <option value="m">Metro(s)</option>
+                        <option value="cm">Centímetro(s)</option>
+                        <option value="mm">Milímetro(s)</option>
+                    </select>
+                </div>
+                <button id="convert-btn">Converter</button>
+                <div class="output-group">
+                    <label for="output">Resultado:</label>
+                    <input type="text" id="output" readonly/>
+                </div>
+                <div id="message"></div>
+            </div>
+        </section>
+    </main>
+<!-- rodape -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h3 class="lato-bold">Jessica Saldaña</h3>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular">LinkedIn: <a href="https://www.linkedin.com/in/jessicamarinasaldana/" target="_blank">@jessicamarinasaldana</a></p>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular">GitHub: <a href="https://github.com/jessicasaldana" target="_blank">@jessicasaldana</a></p>
+                </div>
+                <div class="footer-item">
+                    <p class="lato-regular"><span class="lato-bold"> Jessica Saldaña &copy; 2024.</span> Todos os direitos reservados.</p>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <label for="from">De:</label>
-            <select name="from" id="from">
-                <option value="km">Quilômetro(s)</option>
-                <option value="m">Metro(s)</option>
-                <option value="cm">Centímetro(s)</option>
-                <option value="mm">Milímetro(s)</option>
-            </select>
-        </div>
-        <div class="input-group">
-            <label for="to">Para:</label>
-            <select name="to" id="to">
-                <option value="km">Quilômetro(s)</option>
-                <option value="m">Metro(s)</option>
-                <option value="cm">Centímetro(s)</option>
-                <option value="mm">Milímetro(s)</option>
-            </select>
-        </div>
-        <button id="convert-btn">Converter</button>
-        <div class="output-group">
-            <label for="output">Resultado:</label>
-            <input type="text" id="output" readonly/>
-        </div>
-        <div id="message"></div>
-    </div>
+    </footer>
+    <!-- fim rodape -->
 </body>
 </html>
