@@ -10,7 +10,8 @@ menuToggle.addEventListener('click', () => {
 const botao = document.getElementById('botao');
 
 // Adiciona um ouvinte de evento para o evento 'click'
-botao.addEventListener('click', function() {
-    // Redireciona para outra página
-    window.location.href = '#';
-});
+/*botao.addEventListener('click', function() {
+ *  // Redireciona para outra página
+ *   window.location.href = '#';
+ *});
+ */

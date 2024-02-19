@@ -26,6 +26,10 @@ body {
     background-color: var(--cinza-claro);
 }
 
+main {
+    min-height: 100vh;
+}
+
 h1{
     line-height: 3rem;
     font-size: var(--tamanho-font-titulo-1);
