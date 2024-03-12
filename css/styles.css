@@ -17,13 +17,18 @@
     --china-rose: #b56576ff;
     --light-coral: #e56b6fff;
     --chinese-violet: #6d597aff;
+    --cor1: #00A8A8;
+    --cor2:#0292B7;
+    --cor3: #1F628E;
+    --cor4: #EBE8D3;
+    --cor5: #DDDA21;
     /* sombra texto e elementos */
     --sombra-texto: 2px 2px 4px rgba(34, 34, 34, 1);
     --sombra-elementos: 4px 4px 5px rgba(0, 0, 0, 0.6);
 }
 
 body {
-    background-color: var(--cinza-claro);
+    background-color: var(--cinza-escuro);
 }
 
 main {
@@ -167,28 +172,17 @@ button:hover {
 /* navbar --------------------------------------------------*/
 #navbar {
     height: 60px;
-    color: var(--branco);
-    background-color: var(--yinmn-blue);
-}
-
-a > .logo {
-    top: 0;
-    height: 50px;
-    position: absolute;
-    margin-left: 0.5rem;
-}
-
-#navbar .container {
-    float: right;
     display: flex;
+    padding: 0 1rem;
     align-items: center;
+    color: var(--branco);
     justify-content: space-between;
+    background-color: var(--cinza-escuro);
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    margin-top: 20px;
 }
   
 .nav-menu li {
@@ -202,16 +196,12 @@ a > .logo {
 }
 
 .nav-menu a:hover {
-    color: var(--light-coral);
-    border-bottom: 2px solid var(--light-coral);
+    color: var(--cor5);
+    border-bottom: 2px solid var(--cor5);
 }
   
 .menu-toggle {
-    width: 30px;
-    height: 30px;
     display: none;
-    cursor: pointer;
-    background-color: var(--yinmn-blue);
 }
   
 .menu-toggle::before,
@@ -233,17 +223,18 @@ a > .logo {
         margin-top: -20px;
         position: absolute;
         flex-direction: column;
-        background-color: var(--yinmn-blue);
+        background-color: var(--cinza-escuro);
     }
   
     .nav-menu.active {
         display: flex;
     }
   
-    #navbar .container {
+    #navbar .nav-container {
         height: 60px;
-        margin-right: 1rem;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .nav-menu li {
@@ -257,7 +248,11 @@ a > .logo {
     }
   
     .menu-toggle {
-        display: block;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--cinza-escuro);
     }
 }
 /* fim navbar */
@@ -269,7 +264,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: var(--yinmn-blue);
+    background-color: var(--cinza-escuro);
 }
 
 footer > .container {
