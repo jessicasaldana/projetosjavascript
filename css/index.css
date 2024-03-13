@@ -1,6 +1,5 @@
 :root {
-    --tamanho-banner: 80vh;
-    --tamanho-banner-respon: 60vh;
+    --tamanho-banner: 450px;
 }
 
 /* banner --------------------------------------------------*/
@@ -9,34 +8,101 @@
 }
 
 #banner-info {
-    height: var(--tamanho-banner);
     display: flex;
     align-items: center;
-    justify-content: justify-content;
-}
-
-.banner-img > img {
+    justify-content: center;
     height: var(--tamanho-banner);
 }
 
-#banner-info > h1 {
-    margin: 1.5rem auto;
-    color: var(--branco);
+.img-laptop-1, .banner-text {
+    height: calc(var(--tamanho-banner) - 15%);
+}
+
+.banner-text {
+    width: 45%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text > p {
+    font-size: 22px;
+    line-height: 2rem;
+    color: var(--cinza-claro);
+    text-shadow: var(--sombra-texto);
+}
+
+.titulo {
+    color: var(--cor5);
     text-shadow: var(--sombra-texto);
     font-size: var(--tamanho-font-titulo-pag);
 }
 
-@media (max-width: 750px) {
+.banner-text > p > .nome {
+    color: var(--cor5);
+    text-shadow: var(--sombra-texto);
+    font-size: var(--tamanho-font-titulo-3);
+}
+
+.banner-text > p > .area {
+    text-shadow: var(--sombra-texto);
+}
+
+.img-bitmoji-1 {
+    display: none;
+}
+
+@media (max-width: 850px) {
     #banner {
-        height: var(--tamanho-banner-respon);
+        height: var(--tamanho-banner);
     }
     
     #banner-info {
-        height: var(--tamanho-banner-respon);
+        height: var(--tamanho-banner);
     }
     
-    #banner-info > h1 {
-        margin: 0 20px;
+    .banner-text {
+        width: 60%;
+        padding-left: 1.8rem;
+    }
+
+    .banner-text > p {
+        font-size: var(--tamanho-font-padrao);
+    }
+
+    .titulo {
+        font-size: var(--tamanho-font-titulo-respon-pag);
+    }
+
+    .img-laptop-1 {
+        height: calc(var(--tamanho-banner) - 10%);
+    }
+}
+
+@media (max-width: 550px) {
+    #banner {
+        height: var(--tamanho-banner);
+    }
+
+    #banner-info {
+        height: var(--tamanho-banner);
+        flex-direction: column;
+    }
+
+    .img-bitmoji-1 {
+        width: 170px;
+        display: block;
+    }
+
+    .banner-text {
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .img-laptop-1 {
+        display: none;
     }
 }
 /* fim banner*/

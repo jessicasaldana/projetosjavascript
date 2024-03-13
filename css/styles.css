@@ -1,11 +1,15 @@
 :root {
     /* tamanho fontes */
-    --tamanho-font-padrao: 15pt;
-    --tamanho-font-respon: 16pt;
-    --tamanho-font-titulo-1: 30pt;
-    --tamanho-font-titulo-2: 25pt;
-    --tamanho-font-titulo-3: 20pt;
-    --tamanho-font-titulo-pag: 40pt;
+    --tamanho-font-padrao: 18px;
+    --tamanho-font-titulo-1: 36px;
+    --tamanho-font-titulo-2: 30px;
+    --tamanho-font-titulo-3: 26px;
+    --tamanho-font-titulo-pag: 50px;
+    --tamanho-font-respon:16px;
+    --tamanho-font-titulo-respon-1: 34px;
+    --tamanho-font-titulo-respon-2: 28px;
+    --tamanho-font-titulo-respon-3: 24px;
+    --tamanho-font-titulo-respon-pag: 38px;
     /* paleta de cores */
     --preto: #000f;
     --branco: #ffff;
@@ -21,9 +25,9 @@
     --cor2:#0292B7;
     --cor3: #1F628E;
     --cor4: #EBE8D3;
-    --cor5: #DDDA21;
+    --cor5: #ffa62b;
     /* sombra texto e elementos */
-    --sombra-texto: 2px 2px 4px rgba(34, 34, 34, 1);
+    --sombra-texto: 2px 2px 4px rgba(30, 30, 30, 1);
     --sombra-elementos: 4px 4px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -55,7 +59,30 @@ p, a, li, button, span, label, select, input {
     font-size: var(--tamanho-font-padrao);
 }
 
+.br { /* quebra de linha */
+    white-space: pre-line;
+}
+
 @media (max-width: 750px) {
+    .titulo {
+        font-size: var(--tamanho-font-titulo-respon-pag); 
+    }
+
+    h1{
+        line-height: 2.5rem;
+        font-size: var(--tamanho-font-titulo-respon-1);
+    }
+    
+    h2 {
+        line-height: 2.5rem;
+        font-size: var(--tamanho-font-titulo-respon-2);
+    }
+    
+    h3 {
+        line-height: 2.5rem;
+        font-size: var(--tamanho-font-titulo-respon-3);
+    }
+
     p, a, li, button, span, label, select, input{
         font-size: var(--tamanho-font-respon);
     }
@@ -173,11 +200,10 @@ button:hover {
 #navbar {
     height: 60px;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 2rem;
     align-items: center;
     color: var(--branco);
     justify-content: space-between;
-    background-color: var(--cinza-escuro);
 }
 
 .nav-menu {
@@ -214,7 +240,7 @@ button:hover {
     background-color: var(--branco);
 }
   
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .nav-menu {
         left: 0;
         top: 80px;
@@ -225,12 +251,17 @@ button:hover {
         flex-direction: column;
         background-color: var(--cinza-escuro);
     }
+
+    .nav-menu a:hover {
+        color: var(--branco);
+        border-bottom: none;
+    }
   
     .nav-menu.active {
         display: flex;
     }
   
-    #navbar .nav-container {
+    #navbar > div {
         height: 60px;
         display: flex;
         align-items: center;
@@ -241,10 +272,6 @@ button:hover {
         padding: 10px 0;
         text-align: center;
         margin: 0;
-    }
-
-    .nav-menu li:hover {
-        background-color: var(--light-coral);
     }
   
     .menu-toggle {
@@ -264,10 +291,9 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: var(--cinza-escuro);
 }
 
-footer > .container {
+footer > div {
     padding: 10px;
 }
 
@@ -282,9 +308,9 @@ footer > .container {
 }
 
 .footer-item > p > span, .footer-item > p > a{
-    color: var(--light-coral);
+    color: var(--cor5);
 }
 
 .footer-item > p > a:hover {
-    border-bottom: 2px solid var(--light-coral);
+    border-bottom: 2px solid var(--cor5);
 }
